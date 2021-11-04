@@ -1,6 +1,6 @@
 {
   "name": "@eyevinn/hls-duration",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NPM library to calculate duration of an HLS",
   "main": "dist/index.js",
   "scripts": {
