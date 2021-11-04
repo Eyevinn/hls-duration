@@ -1,4 +1,4 @@
-import hlsduration from "./index";
+import { hlsduration } from "./index";
 
 test("Should fetch HLS and calculate correct duration", async () => {
   const duration = await hlsduration(new URL("https://maitv-vod.lab.eyevinn.technology/VINN.mp4/master.m3u8"));

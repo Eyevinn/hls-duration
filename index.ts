@@ -25,7 +25,7 @@ const calcDuration = (mediaManifestUrl: URL) => new Promise<number>((resolve, re
  * @param url where to locate the HLS stream
  * @returns duration in seconds
  */
-const hlsduration = (url: URL) => new Promise<number>((resolve, reject) => {
+export const hlsduration = (url: URL) => new Promise<number>((resolve, reject) => {
   const parser = m3u8.createStream();
 
   parser.on("m3u", m3u => {
@@ -48,4 +48,3 @@ const hlsduration = (url: URL) => new Promise<number>((resolve, reject) => {
     .catch(reject);
 });
 
-export default hlsduration;
